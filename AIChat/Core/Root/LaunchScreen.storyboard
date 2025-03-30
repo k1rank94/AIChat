@@ -23,7 +23,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIconInternal" translatesAutoresizingMaskIntoConstraints="NO" id="yEY-xJ-Dqq">
-                                <rect key="frame" x="20" y="326" width="353" height="200"/>
+                                <rect key="frame" x="16" y="326" width="361" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="f5E-zn-c1R"/>
                                 </constraints>
@@ -32,17 +32,19 @@
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                         <color key="backgroundColor" name="AccentColor"/>
                         <constraints>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="yEY-xJ-Dqq" secondAttribute="trailing" constant="16" id="48F-Fb-7TP"/>
                             <constraint firstItem="GJd-Yh-RWb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6zP-12-clL"/>
-                            <constraint firstItem="yEY-xJ-Dqq" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="20" id="BhM-Va-iPy"/>
                             <constraint firstItem="GJd-Yh-RWb" firstAttribute="top" secondItem="yEY-xJ-Dqq" secondAttribute="bottom" id="J0M-dR-5If"/>
-                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="yEY-xJ-Dqq" secondAttribute="trailing" constant="20" id="NYW-XN-HgN"/>
+                            <constraint firstItem="yEY-xJ-Dqq" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="MWC-AK-Xv7"/>
+                            <constraint firstItem="yEY-xJ-Dqq" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="16" id="Q5N-o4-D3B"/>
+                            <constraint firstItem="yEY-xJ-Dqq" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="QcL-JJ-3mm"/>
                             <constraint firstItem="yEY-xJ-Dqq" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="hS0-V1-jTP"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
         </scene>
     </scenes>
     <resources>
