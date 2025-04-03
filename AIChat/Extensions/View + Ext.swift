@@ -11,7 +11,7 @@ extension View {
     func callToAction() -> some View {
         self
             .font(.headline)
-            .fontWeight(.medium)
+            .fontWeight(.semibold)
             .foregroundStyle(.white)
             .frame(maxWidth: .infinity)
             .frame(height: 55)
