@@ -35,7 +35,7 @@ struct OnboardingIntroView: View {
             Spacer()
 
             NavigationLink {
-                // TODO: Add destination view
+                OnBoardingColorView()
             } label: {
                 Text("Continue")
                     .callToAction()
