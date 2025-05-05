@@ -9,25 +9,24 @@ import SwiftUI
 
 struct OnBoardingColorView: View {
     
-    @State private var selectedColor: Color? = nil
+    @State private var selectedColor: Color?
     let colors: [Color] = [.blue, .brown, .cyan, .gray, .green, .indigo, .mint, .orange, .purple, .accentColor]
 
     var body: some View {
         ScrollView {
             colorGrid
-            .padding(24)
         }
         .safeAreaInset(
             edge: .bottom,
             alignment: .center,
             spacing: 24) {
                 if let selectedColor {
-                    ctaButton
-                        .background(Color(uiColor: .systemBackground))
-                        .padding(24)
+                    ctaButton(selectedColor: selectedColor)
                 }
             }
             .animation(.bouncy, value: selectedColor)
+            .toolbar(.hidden, for: .navigationBar)
+            .padding(24)
     }
     
     private var colorGrid: some View {
@@ -58,9 +57,9 @@ struct OnBoardingColorView: View {
         )
     }
     
-    private var ctaButton: some View {
+    private func  ctaButton(selectedColor: Color) -> some View {
         NavigationLink {
-            OnBoardingCompletdView()
+            OnBoardingCompletedView(selectedColor: selectedColor)
         } label: {
             Text("Continue")
                 .callToAction()
